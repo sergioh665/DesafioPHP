@@ -1,0 +1,15 @@
+{
+    "name": "sergio/desafio-php",
+    "autoload": {
+        "psr-4": {
+            "Sergio\\DesafioPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sergioh665",
+            "email": "sergioh665@gmail.com"
+        }
+    ],
+    "require": {}
+}
