@@ -4,8 +4,6 @@ namespace Sergio\DesafioPhp;
 
 use PDO;
 
-require_once '../config/database.php';
-
 class Associado {
     private $pdo;
 
