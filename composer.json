@@ -11,5 +11,8 @@
             "email": "sergioh665@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
 }
