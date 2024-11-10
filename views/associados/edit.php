@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/Router.php';
+require_once(__DIR__ . '/../../src/Router.php');
 $associado = $associado->read($_GET['id']);
 ?>
 <!DOCTYPE html>
@@ -9,6 +9,10 @@ $associado = $associado->read($_GET['id']);
     <title>Editar Associado</title>
 </head>
 <body>
+    <nav>
+            <a href="/">Home</a> <br>
+            <a href="/associados">Voltar</a>
+    </nav>
     <h1>Editar Associado</h1>
     <form action="/associados/update" method="post">
         <input type="hidden" name="id" value="<?= $associado['id'] ?>">
@@ -21,6 +25,7 @@ $associado = $associado->read($_GET['id']);
         <label for="data_filiacao">Data de Filiação:</label>
         <input type="date" id="data_filiacao" name="data_filiacao" value="<?= $associado['data_filiacao'] ?>" required><br>
         <button type="submit">Salvar</button>
+        <a href="/associados"><button type="button">Cancelar</button></a>
     </form>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/Router.php';
+require_once(__DIR__ . '/../../src/Router.php');
 $anuidade = $anuidade->read($_GET['id']);
 ?>
 <!DOCTYPE html>
@@ -9,6 +9,10 @@ $anuidade = $anuidade->read($_GET['id']);
     <title>Editar Anuidade</title>
 </head>
 <body>
+    <nav>
+            <a href="/">Home</a> <br>
+            <a href="/anuidades">Voltar</a>
+    </nav>
     <h1>Editar Anuidade</h1>
     <form action="/anuidades/update" method="post">
         <input type="hidden" name="id" value="<?= $anuidade['id'] ?>">
@@ -17,6 +21,7 @@ $anuidade = $anuidade->read($_GET['id']);
         <label for="valor">Valor:</label>
         <input type="number" step="0.01" id="valor" name="valor" value="<?= $anuidade['valor'] ?>" required><br>
         <button type="submit">Salvar</button>
+        <a href="/anuidades"><button type="button">Cancelar</button></a>
     </form>
 </body>
 </html>
