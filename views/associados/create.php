@@ -5,6 +5,9 @@
     <title>Criar Associado</title>
 </head>
 <body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
     <h1>Criar Novo Associado</h1>
     <form action="/associados/store" method="post">
         <label for="nome">Nome:</label>
@@ -16,6 +19,7 @@
         <label for="data_filiacao">Data de Filiação:</label>
         <input type="date" id="data_filiacao" name="data_filiacao" required><br>
         <button type="submit">Salvar</button>
+        <a href="/associados"><button type="button">Cancelar</button></a>
     </form>
 </body>
 </html>

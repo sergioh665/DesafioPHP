@@ -5,6 +5,9 @@
     <title>Criar Pagamento</title>
 </head>
 <body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
     <h1>Criar Novo Pagamento</h1>
     <form action="/pagamentos/store" method="post">
         <label for="associado_id">Associado ID:</label>
@@ -14,6 +17,7 @@
         <label for="pago">Pago:</label>
         <input type="checkbox" id="pago" name="pago"><br>
         <button type="submit">Salvar</button>
+        <a href="/pagamentos"><button type="button">Cancelar</button></a>
     </form>
 </body>
 </html>
