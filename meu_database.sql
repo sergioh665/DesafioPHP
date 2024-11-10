@@ -24,3 +24,19 @@ CREATE TABLE IF NOT EXISTS pagamentos (
     FOREIGN KEY (associado_id) REFERENCES associados(id),
     FOREIGN KEY (anuidade_id) REFERENCES anuidades(id)
 );
+
+ALTER TABLE pagamentos
+DROP FOREIGN KEY pagamentos_ibfk_1;
+
+ALTER TABLE pagamentos
+ADD CONSTRAINT pagamentos_ibfk_1 
+FOREIGN KEY (associado_id) REFERENCES associados(id) 
+ON DELETE CASCADE;
+
+ALTER TABLE pagamentos
+DROP FOREIGN KEY pagamentos_ibfk_2;
+
+ALTER TABLE pagamentos
+ADD CONSTRAINT pagamentos_ibfk_2
+FOREIGN KEY (anuidade_id) REFERENCES anuidades(id)
+ON DELETE CASCADE;
