@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/Router.php';
+require_once(__DIR__ . '/../../src/Router.php');
 $associados = $associado->readAll();
 ?>
 <!DOCTYPE html>
@@ -9,8 +9,11 @@ $associados = $associado->readAll();
     <title>Associados</title>
 </head>
 <body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
     <h1>Lista de Associados</h1>
-    <a href="/associados/create">Adicionar Novo Associado</a>
+    <a href="/associados/create">Adicionar Novo Associado</a> <p>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -34,5 +37,9 @@ $associados = $associado->readAll();
         </tr>
         <?php endforeach; ?>
     </table>
+    <p>
+    <br>
+    <a href="/anuidades">Listar Anuidades aqui</a><p>
+    <a href="/pagamentos">Listar Pagamentos aqui</a>
 </body>
 </html>

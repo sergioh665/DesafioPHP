@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/Router.php';
+require_once(__DIR__ . '/../../src/Router.php');
 $anuidades = $anuidade->readAll();
 ?>
 <!DOCTYPE html>
@@ -9,8 +9,11 @@ $anuidades = $anuidade->readAll();
     <title>Anuidades</title>
 </head>
 <body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
     <h1>Lista de Anuidades</h1>
-    <a href="/anuidades/create">Adicionar Nova Anuidade</a>
+    <a href="/anuidades/create">Adicionar Nova Anuidade</a><p>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -30,5 +33,10 @@ $anuidades = $anuidade->readAll();
         </tr>
         <?php endforeach; ?>
     </table>
+    <p>
+    <br>
+    <a href="/associados">Listar Associados aqui</a><p>
+    <a href="/pagamentos">Listar Pagamentos aqui</a>
+
 </body>
 </html>
