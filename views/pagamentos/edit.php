@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/Router.php';
+require_once(__DIR__ . '/../../src/Router.php');
 $pagamento = $pagamento->read($_GET['id']);
 ?>
 <!DOCTYPE html>
@@ -9,6 +9,10 @@ $pagamento = $pagamento->read($_GET['id']);
     <title>Editar Pagamento</title>
 </head>
 <body>
+    <nav>
+            <a href="/">Home</a> <br>
+            <a href="/pagamentos">Voltar</a>
+    </nav>
     <h1>Editar Pagamento</h1>
     <form action="/pagamentos/update" method="post">
         <input type="hidden" name="id" value="<?= $pagamento['id'] ?>">
@@ -19,6 +23,7 @@ $pagamento = $pagamento->read($_GET['id']);
         <label for="pago">Pago:</label>
         <input type="checkbox" id="pago" name="pago" <?= $pagamento['pago'] ? 'checked' : '' ?>><br>
         <button type="submit">Salvar</button>
+        <a href="/pagamentos"><button type="button">Cancelar</button></a>
     </form>
 </body>
 </html>
