@@ -49,6 +49,8 @@ php -S localhost:8000 -t public
 ```
 
 > Abra o navegador e vá para http://localhost:8000.
+> 
+> Para ter acesso ao Banco de Dados vá para http://localhost/phpmyadmin
 
 ## Autor
 
