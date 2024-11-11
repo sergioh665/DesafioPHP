@@ -10,8 +10,7 @@ $associado = $associado->read($_GET['id']);
 </head>
 <body>
     <nav>
-            <a href="/">Home</a> <br>
-            <a href="/associados">Voltar</a>
+            <a href="/">Home</a>
     </nav>
     <h1>Editar Associado</h1>
     <form action="/associados/update" method="post">

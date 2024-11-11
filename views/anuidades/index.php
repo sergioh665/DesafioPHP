@@ -6,14 +6,16 @@ $anuidades = $anuidade->readAll();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Anuidades</title>
+    <title>Devs do RN - Anuidades</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-    </nav>
+    <header>
+    <a href="/"><img src="/images/banner.png" alt="Banner clicável"></a>
+    </header>
     <h1>Lista de Anuidades</h1>
-    <a href="/anuidades/create">Adicionar Nova Anuidade</a><p>
+    <a href="/anuidades/create">Adicionar Nova Anuidade</a>
     <table border="1">
         <tr>
             <th>ID</th>

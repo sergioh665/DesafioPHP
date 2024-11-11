@@ -6,12 +6,14 @@ $associados = $associado->readAll();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Associados</title>
+    <title>Devs do RN - Associados</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-    </nav>
+    <header>
+        <a href="/"><img src="/images/banner.png" alt="Banner clicável"></a>
+    </header>
     <h1>Lista de Associados</h1>
     <a href="/associados/create">Adicionar Novo Associado</a> <p>
     <table border="1">

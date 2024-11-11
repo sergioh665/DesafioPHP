@@ -10,8 +10,7 @@ $anuidade = $anuidade->read($_GET['id']);
 </head>
 <body>
     <nav>
-            <a href="/">Home</a> <br>
-            <a href="/anuidades">Voltar</a>
+            <a href="/">Home</a>
     </nav>
     <h1>Editar Anuidade</h1>
     <form action="/anuidades/update" method="post">

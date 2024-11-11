@@ -10,8 +10,7 @@ $pagamento = $pagamento->read($_GET['id']);
 </head>
 <body>
     <nav>
-            <a href="/">Home</a> <br>
-            <a href="/pagamentos">Voltar</a>
+            <a href="/">Home</a>
     </nav>
     <h1>Editar Pagamento</h1>
     <form action="/pagamentos/update" method="post">

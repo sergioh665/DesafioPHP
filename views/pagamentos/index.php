@@ -6,14 +6,16 @@ $pagamentos = $pagamento->readAll();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Pagamentos</title>
+    <title>Devs do RN - Pagamentos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-    </nav>
+    <header>
+    <a href="/"><img src="/images/banner.png" alt="Banner clicável"></a>
+    </header>
     <h1>Lista de Pagamentos</h1>
-    <a href="/pagamentos/create">Adicionar Novo Pagamento</a><p>
+    <a href="/pagamentos/create">Adicionar Novo Pagamento</a>
     <table border="1">
         <tr>
             <th>ID</th>
