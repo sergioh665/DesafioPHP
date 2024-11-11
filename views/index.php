@@ -7,10 +7,7 @@
     <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
-    <header>
-        <a href="/"><img src="/images/banner.png" alt="Banner clicável"></a>
-    </header>
-    <div class="container">
+    <?php require_once 'header.php'; ?>
         <h1>Bem-vindo ao Sistema de Gerenciamento de Associados</h1>
         <nav>
             <ul>
@@ -19,6 +16,6 @@
                 <li><a href="/pagamentos">Pagamentos</a></li>
             </ul>
         </nav>
-    </div>
+    <?php require_once 'footer.php'; ?>
 </body>
 </html>
