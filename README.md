@@ -24,7 +24,7 @@ Este projeto é um sistema de gerenciamento de **associados, anuidades e pagamen
 ### Passo 1: Clonar o Repositório
 
 ```sh
-git clone https://github.com/seuusuario/DesafioPHP.git
+git clone https://github.com/sergioh665/DesafioPHP.git
 cd DesafioPHP
 ```
 
