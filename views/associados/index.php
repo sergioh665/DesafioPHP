@@ -1,12 +1,12 @@
 <?php
 require_once(__DIR__ . '/../../src/Router.php');
+require_once(__DIR__ . '/../header.php');
 $associados = $associado->readAll();
 ?>
 
-<?php require_once(__DIR__ . '/../header.php'); ?>
 <h1>Lista de Associados</h1>
-<a href="/associados/create">Adicionar Novo Associado</a> <p>
-<table border="1">
+<a href="/associados/create" class="add-button">Adicionar Novo Associado</a>
+<table>
     <tr>
         <th>ID</th>
         <th>Nome</th>
@@ -23,13 +23,13 @@ $associados = $associado->readAll();
         <td><?= $associado['cpf'] ?></td>
         <td><?= $associado['data_filiacao'] ?></td>
         <td>
-            <a href="/associados/edit?id=<?= $associado['id'] ?>">Editar</a>
-            <a href="/associados/delete?id=<?= $associado['id'] ?>">Deletar</a>
+            <a href="/associados/edit?id=<?= $associado['id'] ?>" class="button edit">Editar</a>
+            <a href="/associados/delete?id=<?= $associado['id'] ?>" class="button delete">Deletar</a>
         </td>
     </tr>
     <?php endforeach; ?>
 </table>
-<a href="/anuidades">Listar Anuidades aqui</a><p>
-<a href="/pagamentos">Listar Pagamentos aqui</a>
+<a href="/anuidades" class="add-button">Listar Anuidades aqui</a>
+<a href="/pagamentos" class="add-button">Listar Pagamentos aqui</a>
 
-<?php require_once(__DIR__ . '/../footer.php');
+<?php require_once(__DIR__ . '/../footer.php'); ?>

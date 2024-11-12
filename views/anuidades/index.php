@@ -5,7 +5,7 @@ $anuidades = $anuidade->readAll();
 ?>
 
 <h1>Lista de Anuidades</h1>
-<a href="/anuidades/create">Adicionar Nova Anuidade</a>
+<a href="/anuidades/create" class="add-button">Adicionar Nova Anuidade</a>
 <table border="1">
     <tr>
         <th>ID</th>
@@ -19,13 +19,13 @@ $anuidades = $anuidade->readAll();
         <td><?= $anuidade['ano'] ?></td>
         <td><?= $anuidade['valor'] ?></td>
         <td>
-            <a href="/anuidades/edit?id=<?= $anuidade['id'] ?>">Editar</a>
-            <a href="/anuidades/delete?id=<?= $anuidade['id'] ?>">Deletar</a>
+            <a href="/anuidades/edit?id=<?= $anuidade['id'] ?>" class="button edit">Editar</a>
+            <a href="/anuidades/delete?id=<?= $anuidade['id'] ?>" class="button delete">Deletar</a>
         </td>
     </tr>
     <?php endforeach; ?>
 </table>
-<a href="/associados">Listar Associados aqui</a></p>
-<a href="/pagamentos">Listar Pagamentos aqui</a>
+<a href="/associados" class="add-button">Listar Associados aqui</a>
+<a href="/pagamentos" class="add-button">Listar Pagamentos aqui</a>
 
-<?php require_once(__DIR__ . '/../footer.php');
+<?php require_once(__DIR__ . '/../footer.php'); ?>
