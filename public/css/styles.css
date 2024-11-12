@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d9d7c0; /* Cor de fundo desejada */
+    background-color: #d9d7c0; /* cor de fundo desejada */
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ header {
 
 header img {
     width: 100%;
-    max-height: 300px; /* Defina a altura máxima desejada */
+    max-height: 300px; /* defina a altura máxima desejada */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -83,4 +83,138 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+/* estilos para os botoes */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button.save {
+    background-color: #4CAF50; 
+    color: white;
+    margin-top: 10px;
+}
+button.save:hover {
+    background-color: #45a049;
+}
+button.cancel {
+    background-color: #f44336; 
+    color: white;
+    margin-top: 10px;
+}
+button.cancel:hover {
+    background-color: #da190b;
+}
+
+/* estilos para os links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* estilos para destacar os links "adicionar" */
+.add-button {
+    display: inline-block;
+    background-color: #333; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* estilos para os botoes "Editar" e "Deletar" */
+.button.edit {
+    background-color: #FFC107; /* Amarelo */
+    color: white;
+}
+
+.button.edit:hover {
+    background-color: #e0a800;
+}
+
+.button.delete {
+    background-color: #DC3545; /* Vermelho */
+    color: white;
+}
+
+.button.delete:hover {
+    background-color: #c82333;
+}
+
+/* estilos para os formularios */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 103.5%;
+
+}
+
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button.save {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+form button.save:hover {
+    background-color: #45a049;
+}
+
+form button.cancel {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+}
+
+form button.cancel:hover {
+    background-color: #da190b;
 }
