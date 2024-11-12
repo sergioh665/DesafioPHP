@@ -13,8 +13,10 @@ $pagamento = $pagamento->read($_GET['id']);
     <input type="number" id="anuidade_id" name="anuidade_id" value="<?= $pagamento['anuidade_id'] ?>" required><br>
     <label for="pago">Pago:</label>
     <input type="checkbox" id="pago" name="pago" <?= $pagamento['pago'] ? 'checked' : '' ?>><br>
-    <button type="submit">Salvar</button>
-    <a href="/pagamentos"><button type="button">Cancelar</button></a>
+    <div class="button-group">
+        <button type="submit" class="save">Salvar</button>
+        <button class="cancel" ><a href="/associados" style="text-decoration: none;">Cancelar</a></button>
+    </div>
 </form>
 
-<?php require_once(__DIR__ . '/../footer.php');
+<?php require_once(__DIR__ . '/../footer.php'); ?>

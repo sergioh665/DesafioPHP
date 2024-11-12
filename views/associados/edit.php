@@ -15,8 +15,10 @@ $associado = $associado->read($_GET['id']);
     <input type="text" id="cpf" name="cpf" value="<?= $associado['cpf'] ?>" required><br>
     <label for="data_filiacao">Data de Filiação:</label>
     <input type="date" id="data_filiacao" name="data_filiacao" value="<?= $associado['data_filiacao'] ?>" required><br>
-    <button type="submit">Salvar</button>
-    <a href="/associados"><button type="button">Cancelar</button></a>
+    <div class="button-group">
+        <button type="submit" class="save">Salvar</button>
+        <button class="cancel" ><a href="/associados" style="text-decoration: none;">Cancelar</a></button>
+    </div>
 </form>
 
-<?php require_once(__DIR__ . '/../footer.php');
+<?php require_once(__DIR__ . '/../footer.php'); ?>
