@@ -8,8 +8,10 @@ require_once(__DIR__ . '/../header.php');
     <input type="number" id="ano" name="ano" required><br>
     <label for="valor">Valor:</label>
     <input type="number" step="0.01" id="valor" name="valor" required><br>
-    <button type="submit">Salvar</button>
-    <a href="/anuidades"><button type="button">Cancelar</button></a>
+    <div class="button-group">
+        <button type="submit" class="save">Salvar</button>
+        <button class="cancel" ><a href="/associados" style="text-decoration: none;">Cancelar</a></button>
+    </div>
 </form>
 
 <?php require_once(__DIR__ . '/../footer.php');
