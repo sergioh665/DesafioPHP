@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Criar Associado</title>
-</head>
-<body>
-    <nav>
-        <a href="/">Home</a>
-    </nav>
+<?php
+require_once(__DIR__ . '/../header.php');
+?>
+
     <h1>Criar Novo Associado</h1>
     <form action="/associados/store" method="post">
         <label for="nome">Nome:</label>
@@ -21,5 +15,5 @@
         <button type="submit">Salvar</button>
         <a href="/associados"><button type="button">Cancelar</button></a>
     </form>
-</body>
-</html>
+
+    <?php require_once(__DIR__ . '/../footer.php');
